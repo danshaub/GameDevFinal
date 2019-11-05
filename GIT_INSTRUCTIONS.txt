@@ -1,0 +1,9 @@
+*ONLY WORK IN YOUR FOLDER!!!*
+
+to get everyone else's work: git pull
+
+to push your stuff: git add [files]*
+		    git commit -m "commit message"
+                    git push
+
+*ONLY add files you've worked on and nothing more*
