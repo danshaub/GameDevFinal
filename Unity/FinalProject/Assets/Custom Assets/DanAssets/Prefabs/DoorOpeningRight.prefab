@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 3430695357949221021}
   - component: {fileID: 3430695357949221022}
   - component: {fileID: 3430695357949221023}
+  - component: {fileID: 6913068057639989757}
+  - component: {fileID: 5899057159215619313}
   m_Layer: 0
   m_Name: DoorOpeningRight
   m_TagString: Untagged
@@ -440,7 +442,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -455,8 +457,8 @@ MonoBehaviour:
     handleCollisionEnter2D: 0
     handleCollisionExit2D: 0
     handleCollisionStay2D: 0
-    handleTriggerEnter: 0
-    handleTriggerExit: 0
+    handleTriggerEnter: 1
+    handleTriggerExit: 1
     handleTriggerStay: 0
     handleCollisionEnter: 0
     handleCollisionExit: 0
@@ -474,7 +476,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!65 &3430695357949221023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -488,6 +490,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.94, y: 1.78, z: 1.23}
   m_Center: {x: 0, y: 0.13, z: 0}
+--- !u!114 &6913068057639989757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430695357949221088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 82786459, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 3430695357949221022}
+--- !u!114 &5899057159215619313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430695357949221088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1144467388, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFSMs:
+  - {fileID: 3430695357949221022}
 --- !u!1 &3430695358279352295
 GameObject:
   m_ObjectHideFlags: 0
